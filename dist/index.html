@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-back">
+    <nav class="h-20 px-10 items-center w-full flex justify-between">
+      <img class="w-36 h-36" src="logo.svg" alt="" />
+      <ul class="text-gray-200 font-semibold hidden cursor-pointer lg:flex">
+        <li class="mx-6"><button id="customerButton">Customers</button></li>
+        <li class="mx-6">Features</li>
+        <li class="mx-6">Integrations</li>
+        <li class="mx-6">Pricing</li>
+      </ul>
+      <div class="hidden lg:flex">
+        <button
+          class="text-gray-200 font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out"
+        >
+          Sign in
+        </button>
+        <button class="w-20 h-12 bg-purp text-white">Sign up</button>
+      </div>
+      <div class="lg:hidden">
+        <p class="text-white text-3xl">&#8801;</p>
+      </div>
+    </nav>
+    <div class="mt-24 flex flex-col items-center">
+      <div
+        class="leading-snug flex flex-col items-center text-center text-white font-bold text-5xl max-w-screen-sm"
+      >
+        Get testimonials from your customers with ease
+      </div>
+      <div class="w-2/3 mt-8">
+        <p class="flex flex-col text-center items-center text-gray-200 text-xl">
+          Collecting testimonials is hard, we get it! So we built Testimonial.
+          In minutes, you can collect text and video testimonials from your
+          customers with no need for a developer or website hosting.
+        </p>
+      </div>
+
+      <div class="h-18 mt-8 mb-4">
+        <ul class="flex flex-col sm:flex-row text-white font-bold gap-2">
+          <li>
+            <button class="mx-auto w-80  bg-purp h-12 rounded-lg  sm:w-40 hover:w-44">
+              Try Free Now
+            </button>
+          </li>
+          <li>
+            <button
+              class="font-semibold mx-auto sm:mx-3 border-purp sm:w-40 border-2 h-12 rounded-lg w-80  hover:w-44"
+            >
+              Talk to Us
+            </button>
+          </li>
+        </ul>
+      </div>
+      <p class="text-[0.75rem] mb-8 text-gray-200">
+        Get Started with Free credits on us. <a href="">See Pricing</a>
+      </p>
+      <video poster="poster.jpeg" class="rounded-xl w-5/6 h-[80vh]" controls>
+        <source src="intro.mp4" type="" />
+      </video>
+    </div>
+    <div
+      id="reveal-element"
+      class="opacity-0 my-20 flex flex-col w-full items-center transform transition-opacity duration-1000 ease-linear translate-y-10"
+    >
+      <p class="text-white text-4xl sm:text-5xl font-bold text-center w-4/5 sm:w-3/5">
+        Add testimonials to your website with no coding!
+      </p>
+      <p class="mt-4 text-gray-400 text-center text-2xl w-4/5 sm:w-3/5">
+        Copy and paste our HTML code to add the Wall Of Love (👉 full version)
+        to your website. We support any no-code platform (Webflow, WordPress,
+        you name it!)
+      </p>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://testimonial.to/js/iframeResizer.min.js"
+    ></script>
+    <iframe
+      id="testimonialto-wall-of-love-for-testimonial-light"
+      src="https://embed-v2.testimonial.to/w/wall-of-love-for-testimonial?theme=light&card=base"
+      frameborder="0"
+      scrolling="no"
+      width="100%"
+    ></iframe>
+    <script type="text/javascript">
+      iFrameResize(
+        { log: false, checkOrigin: false },
+        "#testimonialto-wall-of-love-for-testimonial-light"
+      );
+    </script>
+    <div class="my-12 sm:mx-36 mx-auto w-4/5 h-0.5 bg-gray-400"></div>
+    <!-- <div class="flex flex-col w-4/5 items-center">
+      
+    <div class="my-8  border-red-300 flex md:flex-row h-96 justify-between">
+      <div class="flex flex-col">
+        <p class="text-purp my-2 font-semibold ">Quick to Setup</p>
+        <p class="font-bold text-white text-2xl">A dedicated landing page</p>
+      </div>
+      <div>
+        <img class="h-full w-80" src="1.png" alt="">
+      </div>
+    </div>
+    </div> -->
+    <div class="flex flex-col items-center mx-auto sm:mx-36">
+      <p class="text-gray-200 text-4xl  sm:text-5xl font-bold text-center w-4/5">
+        Collect and display testimonials all in one solution
+      </p>
+      <div class="mt-20 flex lg:flex-row flex-col items-center justify-between">
+        <div class="flex flex-col w-4/5 mx-auto md:w-2/5">
+          <p class="text-purp text-xl font-semibold">Quick to Setup</p>
+          <p class="font-bold text-white text-3xl my-4">
+            A dedicated landing page
+          </p>
+          <p class="text-gray-300 text-lg">
+            Create a dedicated landing page for your business. Share the page
+            link easily via email, social media, or even SMS. Setup can be done
+            in two minutes.
+          </p>
+          <button
+            class="bg-purp hover:bg-purple-700 text-white font-semibold w-36 rounded h-10 my-4"
+          >
+            Try it for free
+          </button>
+        </div>
+        <div>
+          <img class="sm:h-96 h-72 sm:w-full w-4/5 mx-auto " src="1.png" alt="" />
+        </div>
+      </div>
+      <div class="mt-20 flex sm:flex-row  flex-col-reverse items-center justify-between">
+        <div>
+          <img class="sm:h-96 h-72 sm:w-full w-4/5 mx-auto" src="2.png" alt="" />
+        </div>
+        <div class="flex flex-col w-4/5 mx-auto md:w-2/5">
+          <p class="text-purp text-xl font-semibold">Easy to manage</p>
+          <p class="font-bold text-white text-3xl my-4">
+            A dashboard to manage all testimonials
+          </p>
+          <p class="text-gray-300 text-lg">
+            You will have a simple & clean dashboard to manage all testimonials
+            in one place. It's like your email inbox, but it's designed for your
+            social proof!
+          </p>
+          <button
+            class="bg-purp hover:bg-purple-700 text-white font-semibold w-36 rounded h-10 my-4"
+          >
+            Try it for free
+          </button>
+        </div>
+      </div>
+      <div class="mt-20 flex lg:flex-row flex-col items-center justify-between">
+        <div class="flex flex-col w-4/5 mx-auto md:w-2/5">
+          <p class="text-purp text-xl font-semibold">Track the metrics</p>
+          <p class="font-bold text-white text-3xl my-4">
+            Understand how video testimonials are performing
+          </p>
+          <p class="text-gray-300 text-lg">
+            Track the metrics from all embedded videos, help your marketing team
+            understand the performance at a glance, even promote the
+            best-performing videos to different marketing channels.
+          </p>
+          <button
+            class="bg-purp hover:bg-purple-700 text-white font-semibold w-36 rounded h-10 my-4"
+          >
+            Try it for free
+          </button>
+        </div>
+        <div>
+          <img class="sm:h-96 h-72 sm:w-full w-4/5 mx-auto " src="1.png" alt="" />
+        </div>
+      </div>
+      <div class="mt-20 flex sm:flex-row  flex-col-reverse items-center justify-between">
+        <div>
+          <img class="sm:h-96 h-72 sm:w-full w-4/5 mx-auto" src="4.png" alt="" />
+        </div>
+        <div class="flex flex-col w-4/5 mx-auto md:w-2/5">
+          <p class="text-purp text-xl font-semibold">More social proof</p>
+          <p class="font-bold text-white text-3xl my-4">
+            Not only text and video testimonials
+          </p>
+          <p class="text-gray-300 text-lg">
+            If you have testimonials on social media (e.g. Twitter, LinkedIn,
+            TikTok etc), video hosting platforms (e.g. YouTube, Vimeo), and
+            other review sites (e.g. G2, Google, Capterra, Yelp etc), bring them
+            all to your account. Testimonial helps you manage all your social
+            proof in a single place!
+          </p>
+          <button
+            class="bg-purp hover:bg-purple-700 text-white font-semibold w-36 rounded h-10 my-4"
+          >
+            Try it for free
+          </button>
+        </div>
+      </div>
+      
+      <div class="mt-20 flex lg:flex-row flex-col items-center justify-between">
+        <div class="flex flex-col w-4/5 mx-auto md:w-2/5">
+          <p class="text-purp text-xl font-semibold">Embed the Wall of Love</p>
+          <p class="font-bold text-white text-3xl my-4">
+            The best testimonials all in one place
+          </p>
+          <p class="text-gray-300 text-lg">
+            Treat the Wall of Love as the place to showcase all your favorite
+            testimonials. You can embed it to your website in under a minute. No
+            coding knowledge required!
+          </p>
+          <button
+            class="bg-purp hover:bg-purple-700 text-white font-semibold w-36 rounded h-10 my-4"
+          >
+            Try it for free
+          </button>
+        </div>
+        <div>
+          <img class="sm:h-96 h-72 sm:w-full w-4/5 mx-auto " src="5.png" alt="" />
+        </div>
+      </div>
+    
+      
+    </div>
+    <div class="mt-40 mx-auto flex flex-col items-center w-full sm:w-4/5">
+      <p class="text-gray-200 sm:w-3/5 w-4/5 text-5xl font-bold text-center">
+        Integrate with any platform
+      </p>
+      <p class="mt-4 mb-8 text-gray-400 w-4/5 text-xl text-center">
+        We built the ultimate tool for showcasing your satisfied customers. With
+        3-lines of HTML code, you can embed all your testimonials to any
+        platform!
+      </p>
+    </div>
+    <div class="sm:flex hidden flex-wrap mt-16 sm:h-48 sm:w-4/5 w-full sm:mx-auto sm:items-center">
+      <div
+        class="sm:w-60 w-1/3 h-16 mx-4 rounded-lg flex items-center justify-center bg-white"
+      >
+        <img src="webflow.png" class="w-40 h-10 object-contain" alt="" />
+      </div>
+      <div
+        class="sm:w-60 w-1/3 h-16 mx-4 rounded-lg flex items-center justify-center bg-white"
+      >
+        <img src="shopify-logo.png" class="w-40 h-10 object-contain" alt="" />
+      </div>
+      <div
+        class="sm:w-60 w-1/3 h-16 mx-4 rounded-lg flex items-center justify-center bg-white"
+      >
+        <img src="carrd-logo.png" class="w-40 h-10 object-contain" alt="" />
+      </div>
+      <div
+        class="sm:w-60 w-1/3 h-16 mx-4 rounded-lg flex items-center justify-center bg-white"
+      >
+        <img src="wordpress-logo.png" class="w-40 h-10 object-contain" alt="" />
+      </div>
+      <div
+        class="sm:w-60 w-1/3 h-16 mx-4 rounded-lg flex items-center justify-center bg-white"
+      >
+        <img src="kajabi-logo.svg" class="w-40 h-10 object-contain" alt="" />
+      </div>
+      <div
+        class="sm:w-60 w-1/3 h-16 mx-4 rounded-lg flex items-center justify-center bg-white"
+      >
+        <img src="bubble-logo.svg" class="w-40 h-10 object-contain" alt="" />
+      </div>
+      <div
+        class="sm:w-60 w-1/3 h-16 mx-4 rounded-lg flex items-center justify-center bg-white"
+      >
+        <img src="framer-logo.png" class="w-40 h-10 object-contain" alt="" />
+      </div>
+      <div
+        class="sm:w-60 w-1/3 h-16 mx-4 rounded-lg flex items-center justify-center bg-white"
+      >
+        <img
+          src="squarespace-logo-horizontal-black.jpeg"
+          class="w-40 h-10"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <a class="mt-8 text-gray-400 underline">✨ See all 100+ integrations</a>
+    </div>
+    <div
+      class="sm:my-24 my-8 py-14 sm:px-12 px-8 sm:mx-28 mx-4 justify-between  rounded-lg flex flex-col bg-white"
+    >
+      <div class="text-center">
+        <span class="flex">
+          <svg
+            class="text-purp cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100"
+            width="23"
+            height="23"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+            ></path>
+          </svg>
+
+          <svg
+            class="text-purp cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100"
+            width="23"
+            height="23"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+            ></path>
+          </svg>
+
+          <svg
+            class="text-purp cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100"
+            width="23"
+            height="23"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+            ></path>
+          </svg>
+
+          <svg
+            class="text-purp cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100"
+            width="23"
+            height="23"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+            ></path>
+          </svg>
+
+          <svg
+            class="text-purp cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100"
+            width="23"
+            height="23"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+            ></path>
+          </svg>
+        </span>
+      </div>
+      <p class="text-2xl my-8 flex font-bold">
+        We embedded Testimonial.to on the last page of our Prehireforms
+        (candidates' skills assessment forms) and candidates' testimonials
+        started coming in automatically! Testimonials collection is now
+        automated and we don't need to ask customers or candidates to drop us
+        testimonials anymore!
+      </p>
+      <div class="flex items-center">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/testimonialto.appspot.com/o/testimonials%2F63357365-386c-4ba9-aed5-f4e77ba3a228%2Favatar?alt=media&token=49e40757-1c90-4a48-bf0f-7a25dc85c4d4"
+          class="h-20 w-20 mx-4 rounded-full"
+          alt=""
+        />
+        <div class="flex flex-col justify-evenly">
+          <p class="font-bold text-lg">Kam Ling</p>
+          <div class="text-lg">Co-Founder at Prehireforms.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col  items-center sm:w-3/5 w-4/5 mx-auto justify-between">
+      <p class="font-bold text-3xl text-white text-center">
+        Ready to collect testimonials?
+      </p>
+      <p class="my-8 text-center text-gray-200 text-lg leading-7">
+        We are loved by Fortune 500 companies, early-stage startups, marketing
+        agencies, real estate agents, freelancers, and many more. Your
+        customers' testimonials are the best social proof you can get! Get
+        started now 👇
+      </p>
+      <div class="flex flex-col sm:flex-row gap-2">
+        <div class="flex items-center mr-4">
+          <div class="h-4 w-4 mr-2 bg-green-600 rounded-full flex justify-center items-center">
+            <div class="-rotate-45 border-l-[0.5px] h-1 w-2 border-b-[0.5px] border-black">
+            </div>
+            
+          </div>
+          <div class="text-gray-200 font-semibold text-sm">No Coding Skills Required</div>
+        </div>
+        <div class="flex items-center">
+          <div class="h-4 w-4 mr-2 bg-green-600 rounded-full flex justify-center items-center">
+            <div class="-rotate-45 border-l-[0.5px] h-1 w-2 border-b-[0.5px] border-black">
+            </div>
+            
+          </div>
+          <div class="text-gray-200 font-semibold text-sm">Start in under 2 minutes.</div>
+        </div>
+      </div>
+      <div class="flex  sm:flex-row flex-col">
+        <button class="px-8 transition-all text-white font-semibold bg-purp rounded-lg py-2 my-6 mx-4 hover:px-9 hover:mx-3 hover:py-3 hover:my-5">Get started with FREE credits</button>
+       <button class="px-12 text-white font-semibold border-2 border-purp my-6 py-2 mx-2 hover:px-13 hover:mx-1 hover:py-3 hover:my-5">Talk to Us</button>
+       
+      </div>
+    </div>
+    <footer>
+      <div class="flex mt-8">
+        <div class="w-2/5 h-96  flex flex-col items-centers pl-14 pt-8">
+         
+          <img class="w-32 h-18 object-contain" src="logo.svg" alt="" />
+          <p class="text-gray-200 my-4 mr-4">The easiest solution to getting text and video testimonials from your customers</p>
+        </div>
+        <div class="w-1/5 h-96  px-4 py-8">
+          <ul>
+            <li class="text-white ">Products</li>
+            <li class="text-gray-400">Our Wall of Love</li>
+            <li class="text-gray-400">Chrome Extension</li>
+            <li class="text-gray-400">Slack App</li>
+            <li class="text-gray-400">Hoppin App</li>
+            <li class="text-gray-400">Pricing</li>
+            <li class="text-gray-400">Features</li>
+            <li class="text-gray-400">Integrations</li>
+            <li class="text-gray-400">Help Center</li>
+            <li class="text-gray-400">Product Demo</li>
+            <li class="text-gray-400">Status Page</li>
+          </ul>
+        </div>
+        <div class="w-1/5 h-96 px-4 py-8">
+          <ul>
+            <li class="text-white ">Company</li>
+            <li class="text-gray-400">Our Resouces</li>
+            <li class="text-gray-400">Tutorials</li>
+            <li class="text-gray-400">Customer Stories</li>
+            <li class="text-gray-400">Join affiliate program</li>
+            <li class="text-gray-400">Privacy Policy</li>
+            <li class="text-gray-400">Terms of Service </li>
+            <li class="text-gray-400">Cookie Policy </li>
+            <li class="text-gray-400">DPA (GDPR)</li>
+            <li class="text-gray-400">Contact Us</li>
+          </ul>
+        </div>
+        <div class="w-1/5 h-96  px-4 py-8">
+          <ul>
+            <li class="text-white ">Customers</li>
+            <li class="text-gray-400">Agencies</li>
+            <li class="text-gray-400">B2B Companies</li>
+            <li class="text-gray-400">Course creators</li>
+            <li class="text-gray-400">ecommerce</li>
+            <li class="text-gray-400">Consumer apps</li>
+          </ul>
+        </div>
+        
+      </div>
+    </footer>
+  </body>
+  <script>
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Add Tailwind classes to transition the element into view
+            entry.target.classList.remove("opacity-0", "translate-y-5");
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            // Optionally, stop observing the element after it has been revealed
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.3, // Trigger when 10% of the element is visible
+      }
+    );
+
+    // Target the element to be observed
+    const elementToReveal = document.getElementById("reveal-element");
+    observer.observe(elementToReveal);
+  </script>
+  <script src="script.js"></script>
+</html>
